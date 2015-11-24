@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Minimizer</title>
+    <link rel="icon" type="image/gif" href="./images/pacman.gif">
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/urlmin.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.min.js" rel="script"></script>
+    <script src="js/main.js" rel="script"></script>
+    <script src="js/notify.min.js" rel="script"></script>
+    <script type="text/javascript"
+            src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+                'version':'1.1','packages':['table']}]}"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.min.js" rel="script"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="starter-template">
+        <h1><strong>URL minimizer</strong></h1>
+        <hr align="center" width="500"/>
+        <br><br><br>
+
+        <div id="div-signin" class="form-signin">
+            <h4><strong>Input your URL address:</strong></h4>
+            <input id="input_url" type="url" class="form-control" name="url" placeholder="Input URL address"
+                   required autofocus>
+            <br>
+            <input id="input_short_link" type="hidden" class="form-control" name="url"
+                   placeholder="Input your short URL address"
+                   required autofocus>
+            <br>
+            <label class="checkbox-inline"><input id="limit_link" type="checkbox" value=""><strong>Create a link
+                with a limited shelf life</strong>
+            </label>
+        </div>
+        <br><br>
+
+        <div class="btn-group btn-group-xs" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" id="minimaze" class="btn btn-primary">Minimaze</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="redirect" class="btn btn-success">Redirect</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="custom_link" class="btn btn-info">Custom link</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="statistic" class="btn btn-warning">Show statistics</button>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div id="table_div"></div>
+    </div>
+</div>
+</body>
+</html>

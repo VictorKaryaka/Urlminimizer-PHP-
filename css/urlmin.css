@@ -1,0 +1,29 @@
+body {
+    background: url("../images/blur.jpg");
+}
+
+th {
+    text-align: center;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.visualization-table-tr-head {
+    background-color: #A3D7F1;
+    font-weight: bold;
+    text-align: center;
+}
+
+#div-signin {
+    background-color: rgba(0, 255, 194, 0.07);
+    border-radius: 18px;
+}
