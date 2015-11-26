@@ -1,5 +1,6 @@
 body {
-    background: url("../images/blur.jpg");
+    background: url("../images/blur.jpg") no-repeat;
+    background-size: 100%;
 }
 
 th {
